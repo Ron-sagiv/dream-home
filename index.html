@@ -6,8 +6,29 @@
     <title>Dream Home</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-white box-border m-0 p-0 font-[Montserrat]">
-    <header></header>
+  <body class="bg-white box-border m-0 p-0 font-[Montserrat]" >
+    <header class="h-[30%] w-[100%] bg-[#FEF7F2] m-0 p-4">
+      <div>
+        <nav class="flex text-[18px]">
+              <div class="h-[15%] w-[10%]"><img src="./src/assets/logo.png" alt="logo"></div>
+              <div class="h-[15%] w-[80%]">
+                  <ul class="flex flex-row justify-center m-8 p-1 gap-15 ">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#service">Service</a></li>
+                      <li><a href="#agents">Agents</a></li>
+                      <li><a href="#contacts">Contacts</a></li>
+                  </ul>
+              </div>
+              <div class="flex flex-row justify-end text-black list-none h-[15%] w-[10%] m-8 p-1 gap-6">
+                 
+                      <div class=" w-[15%]"><img src="./src/assets/search.png" alt="search"></div> 
+                      <div class=" w-[15%]"><img src="./src/assets/user.jpg" alt="search"></div>
+                      <div class=" w-[70%]"><button type="submit" class="w-[90%] p-[5px] rounded-[20px] bg-black text-white text-[1em]">Sign up</button></div>
+                      
+              </div>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="hero"></section>
       <section class="search-bar"></section>
