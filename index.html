@@ -6,79 +6,202 @@
     <title>Dream Home</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="max-h-full bg-white box-border m-0 p-0 font-[Montserrat]" >
+  <body class="max-h-full bg-white box-border m-0 p-0 font-[Montserrat]">
     <header class="h-[30%] w-[100%] bg-[#FEF7F2] m-0 p-8">
       <div>
         <nav class="flex text-[18px]">
-              <div class="h-[15%] w-[10%]"><img src="./src/assets/logo.png" alt="logo"></div>
-              <div class="h-[15%] w-[80%]">
-                  <ul class="flex flex-row justify-center m-8 p-1 gap-15 font-bold">
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#service">Service</a></li>
-                      <li><a href="#agents">Agents</a></li>
-                      <li><a href="#contacts">Contacts</a></li>
-                  </ul>
-              </div>
-              <div class="flex flex-row justify-end text-black list-none h-[15%] w-[10%] m-8 p-1 gap-6">
-                 
-                      <div class=" w-[20%]"><img class="w-[100%] h-auto" src="./src/assets/search.png" alt="search"></div> 
-                      <div class=" w-[20%]"><img class="w-[100%] h-auto" src="./src/assets/user.png" alt="user"></div>
-                      <div class=" w-[60%]"><button type="submit" class="w-[100%] p-[5px] rounded-[20px] bg-black text-white text-[1em]">Sign up</button></div>
-                      
-              </div>
+          <div class="h-[15%] w-[10%]">
+            <img src="./src/assets/logo.png" alt="logo" />
+          </div>
+          <div class="h-[15%] w-[80%]">
+            <ul class="flex flex-row justify-center m-8 p-1 gap-15 font-bold">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#agents">Agents</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-row justify-end text-black list-none h-[15%] w-[10%] m-8 p-1 gap-6"
+          >
+            <div class="w-[20%]">
+              <img
+                class="w-[100%] h-auto"
+                src="./src/assets/search.png"
+                alt="search"
+              />
+            </div>
+            <div class="w-[20%]">
+              <img
+                class="w-[100%] h-auto"
+                src="./src/assets/user.png"
+                alt="user"
+              />
+            </div>
+            <div class="w-[60%]">
+              <button
+                type="submit"
+                class="w-[100%] p-[5px] rounded-[20px] bg-black text-white text-[1em]"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
     <main class="w-[100%] bg-[#FEF7F2] m-0 p-0 flex flex-col">
-      <section class=" h-100 w-[100%] bg-[#FEF7F2] flex flex-row  items-center p-16">
-        
-        
-          <div class="  w-[40%] flex flex-col items-start">
-            <p class="text-[55px] w-[50%]"><b>Find your Dream Home</b></p>
-            <p class="w-[50%]">Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
-            <br/>
-            <div class="w-[20%]"><button type="submit" class="w-[100%] p-[5px] rounded-[20px] bg-black text-white text-[1em]">Sign up</button></div>
-          </div> 
-          
-          <div class="w-[40%] "><img class="w-80%" src="./src/assets/heroimage1.png" alt="heroimg"></div>
+      <section
+        class="h-100 w-[100%] bg-[#FEF7F2] flex flex-row items-center p-16"
+      >
+        <div class="w-[40%] flex flex-col items-start">
+          <p class="text-[55px] w-[50%]"><b>Find your Dream Home</b></p>
+          <p class="w-[50%]">
+            Explore our curated selection of exquisite properties meticulously
+            tailored to your unique dream home vision
+          </p>
+          <br />
+          <div class="w-[20%]">
+            <button
+              type="submit"
+              class="w-[100%] p-[5px] rounded-[20px] bg-black text-white text-[1em]"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
 
-          
-        
-        
-
+        <div class="w-[40%]">
+          <img class="w-80%" src="./src/assets/heroimage1.png" alt="heroimg" />
+        </div>
       </section>
       <section></section>
       <section class=" "></section>
-      <section class="our mission"></section>
-      <section class=" h-140 w-[100%] bg-white flex flex-col  items-center m-0 p-0">
-        <div><p class="text-[55px]"><b>Why Choose Us</b></p></div>
-        <div class="w-[25%] text-center"><p>Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched Personalized Service</p></div>
+
+      <!-- /////////////////////////////mission section////////////// -->
+      <section class="our-mission bg-white w-full px-20 py-24">
+        <div class="flex items-center gap-16">
+          <figure class="basis-1/2 rounded-2xl overflow-hidden">
+            <img
+              src="./src/assets/house-mission-sec.png"
+              alt="Modern luxury house"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+
+          <div class="containter-content basis-1/2 flex flex-col gap-8">
+            <h2 class="text-[48px] font-extrabold leading-tight text-[#2B1B12]">
+              We Help You To Find <br />
+              Your Dream Home
+            </h2>
+
+            <p class="text-[#4F3527] text-lg leading-8 font-medium max-w-xl">
+              From cozy cottages to luxurious estates, our dedicated team guides
+              you through every step of the journey, ensuring your dream home
+              becomes a reality
+            </p>
+
+            <ul class="flex gap-16 text-[#4F3527]">
+              <li class="flex flex-col">
+                <span class="text-5xl font-extrabold">8K+</span>
+                <span class="text-base font-semibold"> Houses Available </span>
+              </li>
+
+              <li class="flex flex-col">
+                <span class="text-5xl font-extrabold">6K+</span>
+                <span class="text-base font-semibold"> Houses Sold </span>
+              </li>
+
+              <li class="flex flex-col">
+                <span class="text-5xl font-extrabold">2K+</span>
+                <span class="text-base font-semibold"> Trusted Agents </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /////////////////////////////end mission section////////////// -->
+      <section
+        class="h-140 w-[100%] bg-white flex flex-col items-center m-0 p-0"
+      >
+        <div>
+          <p class="text-[55px]"><b>Why Choose Us</b></p>
+        </div>
+        <div class="w-[25%] text-center">
+          <p>
+            Elevating Your Home Buying Experience with Expertise, Integrity, and
+            Unmatched Personalized Service
+          </p>
+        </div>
 
         <div class="w-[70%]">
-                  <ul class="flex flex-row justify-center m-8 p-1  ">
-                      <li><div class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start">
-                          <img class="w-[80%]" src="./src/assets/mappin.png" alt="mapimg">
-                          <h2 class="text-[25px]"><b>Expert Grudance</b></h2>
-                          <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
-                      </div></li>
-                      <li><div class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start">
-                          <img class="w-[80%]" src="./src/assets/service.png" alt="service">
-                          <h2 class="text-[25px]"><b>Personalized Service</b></h2>
-                          <p>Our services adapt to your unique needs, making your journey stress-free</p>
-                      </div></li>
-                      <li><div class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start">
-                          <img class="w-[80%]" src="./src/assets/clipboard.png" alt="clipboard">
-                          <h2 class="text-[25px]"><b>Transparent Process</b></h2>
-                          <p>Stay informed with our clear and honest approach to buying your home</p>
-                      </div></li>
-                      <li><div class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start">
-                          <img class="w-[80%]" src="./src/assets/support.png" alt="support">
-                          <h2 class="text-[25px]"><b>Exceptional Support</b></h2>
-                          <p>Providing peace of mind with our responsive and attentive customer service</p>
-                      </div></li>
-                      
-                  </ul>
+          <ul class="flex flex-row justify-center m-8 p-1">
+            <li>
+              <div
+                class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start"
+              >
+                <img
+                  class="w-[80%]"
+                  src="./src/assets/mappin.png"
+                  alt="mapimg"
+                />
+                <h2 class="text-[25px]"><b>Expert Grudance</b></h2>
+                <p>
+                  Benefit from our team's seasoned expertise for a smooth buying
+                  experience
+                </p>
               </div>
+            </li>
+            <li>
+              <div
+                class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start"
+              >
+                <img
+                  class="w-[80%]"
+                  src="./src/assets/service.png"
+                  alt="service"
+                />
+                <h2 class="text-[25px]"><b>Personalized Service</b></h2>
+                <p>
+                  Our services adapt to your unique needs, making your journey
+                  stress-free
+                </p>
+              </div>
+            </li>
+            <li>
+              <div
+                class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start"
+              >
+                <img
+                  class="w-[80%]"
+                  src="./src/assets/clipboard.png"
+                  alt="clipboard"
+                />
+                <h2 class="text-[25px]"><b>Transparent Process</b></h2>
+                <p>
+                  Stay informed with our clear and honest approach to buying
+                  your home
+                </p>
+              </div>
+            </li>
+            <li>
+              <div
+                class="w-[80%] h-[100%] bg-[#DDC7BB] m-1 p-1 flex flex-col items-start"
+              >
+                <img
+                  class="w-[80%]"
+                  src="./src/assets/support.png"
+                  alt="support"
+                />
+                <h2 class="text-[25px]"><b>Exceptional Support</b></h2>
+                <p>
+                  Providing peace of mind with our responsive and attentive
+                  customer service
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="offerings"></section>
       <section class="reviews"></section>
