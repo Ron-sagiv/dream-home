@@ -6,17 +6,627 @@
     <title>Dream Home</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header></header>
-    <main>
-      <section class="hero"></section>
-      <section class="search-bar"></section>
-      <section class="our mission"></section>
-      <section class="why-us"></section>
-      <section class="offerings"></section>
-      <section class="reviews"></section>
-      <section class="contact-us"></section>
+  <body class="max-h-full bg-white box-border m-0 p-0 font-[Montserrat]">
+    <header class=" bg-[#FEF7F2] m-0 p-16">
+      <div class="flex text-[18px] justify-evenly overflow-hidden">
+        
+          <div class=" h-[29px] w-[93px] ">
+            <div class="flex justify-start items-start w-full">
+              <img class="w-full" src="./src/assets/logo.png" alt="logo" />
+            </div>
+          </div>
+          <div class="h-[22px] w-[467px]">
+            <ul class="flex flex-row justify-center m-8 p-1 gap-15 font-bold">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#agents">Agents</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-row justify-end text-black list-none m-8 p-1 gap-6"
+          >
+            <div class="w-[24px] h-[24px]">
+              <img
+                class="w-[100%] h-auto"
+                src="./src/assets/search.png"
+                alt="search"
+              />
+            </div>
+            <div class="w-[24px] h-[24px]">
+              <img
+                class="w-[100%] h-auto"
+                src="./src/assets/user.png"
+                alt="user"
+              />
+            </div>
+            <div class="w-[122px] h-[48px]">
+              <button
+                type="submit"
+                class="w-[100%] p-[5px] rounded-[20px] bg-black text-white text-[1em]"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+      </div>
+    </header>
+    <main class="w-[100%] bg-[#FEF7F2] m-0 p-0 flex flex-col">
+      <div class="hero-n-bar flex flex-col">
+        <!-- /////////////////////////////start hero section////////////// -->
+        <section
+          class="h-100 w-[100%] bg-[#FEF7F2] flex flex-row items-center p-16"
+        >
+          <div class="w-[40%] flex flex-col items-start">
+            <p class="text-[55px] w-[50%]"><b>Find your Dream Home</b></p>
+            <p class="w-[50%]">
+              Explore our curated selection of exquisite properties meticulously
+              tailored to your unique dream home vision
+            </p>
+            <br />
+            <div class="w-[122px] h-[48px]">
+              <button
+                type="submit"
+                class="w-[100%] p-[5px] rounded-[20px] bg-black text-white text-[1em]"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+
+        <div class="w-[1050px] ">
+          <img class="" src="./src/assets/heroimage1.png" alt="heroimg" />
+        </div>
+      </section>
+      <!-- /////////////////////////////end hero section////////////// -->
+      <!-- /////////////////////////////Start search bar section////////////// -->
+        <section
+          class="search-bar w-4/5 mx-auto h-[160px] bg-[#DDC7BB] rounded-3xl flex justify-center relative z-20 mt-16 translate-y-1/2"
+        >
+          <div class="w-9/10 flex items-center justify-evenly gap-5">
+            <!-- Location -->
+            <div class="relative flex-1">
+              <input
+                type="text"
+                placeholder="Location"
+                class="w-full rounded-xl bg-[#FBF5F1] px-5 py-4 pr-14 text-lg outline-none"
+              />
+
+              <img
+                src="./src/assets/location-icon.png"
+                alt="little location icon"
+                class="absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2"
+              />
+            </div>
+
+            <!-- Type -->
+            <div class="relative flex-1">
+              <input
+                type="text"
+                placeholder="Type"
+                class="w-full rounded-xl bg-[#FBF5F1] px-5 py-4 pr-14 text-lg outline-none"
+              />
+
+              <img
+                src="./src/assets/home-icon.png"
+                alt="little home icon"
+                class="absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2"
+              />
+            </div>
+
+            <!-- Price -->
+            <div class="relative flex-1">
+              <input
+                type="text"
+                placeholder="Price Range"
+                class="w-full rounded-xl bg-[#FBF5F1] px-5 py-4 pr-14 text-lg outline-none"
+              />
+
+              <img
+                src="./src/assets/price-icon.png"
+                alt="little price icon"
+                class="absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2"
+              />
+            </div>
+            <!-- Button -->
+            <button
+              class="rounded-xl bg-[#3b1d11] px-10 py-4 text-lg font-medium text-white transition hover:opacity-90"
+            >
+              Sign up
+            </button>
+          </div>
+        </section>
+      </div>
+      <!-- /////////////////////////////End search bar section////////////// -->
+ 
+      <!-- /////////////////////////////mission section////////////// -->
+      <section
+        class="our-mission bg-white w-full px-20 py-24 min-h-[500px] pt-36"
+      >
+        <div class="flex items-center gap-16">
+          <figure class="basis-1/2 rounded-2xl overflow-hidden">
+            <img
+              src="./src/assets/house-mission-sec.png"
+              alt="Modern luxury house"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+
+          <div class="containter-content basis-1/2 flex flex-col gap-8">
+            <h2 class="text-[48px] font-extrabold leading-tight text-[#2B1B12]">
+              We Help You To Find <br />
+              Your Dream Home
+            </h2>
+
+            <p class="text-[#4F3527] text-lg leading-8 font-medium max-w-xl">
+              From cozy cottages to luxurious estates, our dedicated team guides
+              you through every step of the journey, ensuring your dream home
+              becomes a reality
+            </p>
+
+            <ul class="flex gap-16 text-[#4F3527]">
+              <li class="flex flex-col">
+                <span class="text-5xl font-extrabold">8K+</span>
+                <span class="text-base font-semibold"> Houses Available </span>
+              </li>
+
+              <li class="flex flex-col">
+                <span class="text-5xl font-extrabold">6K+</span>
+                <span class="text-base font-semibold"> Houses Sold </span>
+              </li>
+
+              <li class="flex flex-col">
+                <span class="text-5xl font-extrabold">2K+</span>
+                <span class="text-base font-semibold"> Trusted Agents </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /////////////////////////////end mission section////////////// -->
+      <!-- /////////////////////////////start choose us section////////////// -->
+      <section class="w-full px-20 py-24 bg-white flex flex-col">
+        <div>
+          <p class="text-[55px] text-center"><b>Why Choose Us</b></p>
+        </div>
+        <div class=" flex justify-center">
+          <p class="w-[629px] h-[58px] text-[18px] leading-8 font-semibold text-center font-Montserrat">
+           <b>Elevating Your Home Buying Experience with Expertise, Integrity, and
+            Unmatched Personalized Service</b> 
+          </p>
+        </div>
+
+        
+          <div class="cards-all flex justify-evenly  overflow-hidden">
+                  
+            <div class="card-1 w-[275px] h-[268px] rounded-[18px] bg-[#DDC7BB] overflow-hidden  m-2 ">
+              <div class="card-pic w-[83px] h-[83px]  p-4">
+                <div class="rounded-[8px] bg-white overflow-hidden flex flex-col items-center">
+                <img class="w-[53px] h-[52px]"
+                  src="./src/assets/mappin.png"
+                  alt="mapimg"
+                />
+                </div>
+              </div>
+              <div class="card-content  bg-[#DDC7BB] ">
+                <div class="flex flex-col items-start justify-evenly p-2">
+                  <h2 class="w-[158px] h-[22px] text-[18px] font-Montserrat font-bold">Expert Guidance</h2>
+                  <br/>
+                  <p class="w-[227px] h-[63px] text-[16px] font-Montserrat font-light leading-[20px]">
+                    Benefit from our team's seasoned expertise for a smooth buying
+                    experience
+                  </p>
+                </div>
+              </div>    
+            </div>        
+                  
+            <div class="card-2 w-[275px] h-[268px] rounded-[18px]  bg-[#DDC7BB] overflow-hidden  m-2  ">
+              <div class="card-pic w-[83px] h-[83px]  p-4">
+                <div class="rounded-[8px] bg-white overflow-hidden flex flex-col items-center">
+                <img class="w-[53px] h-[52px]"
+                  src="./src/assets/service.png"
+                  alt="service"
+                />
+                </div>
+              </div>
+              <div class="card-content  bg-[#DDC7BB] ">
+                <div class="flex flex-col items-start justify-evenly p-2">
+                  <h2 class="w-[196px] h-[22px] text-[18px] font-Montserrat font-bold">Personalized Service</h2>
+                  <br/>
+                  <p class="w-[227px] h-[63px] text-[16px] font-Montserrat font-light leading-[20px]">
+                    Our services adapt to your unique needs, making your journey
+                    stress-free
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-3 w-[275px] h-[268px] rounded-[18px] bg-[#DDC7BB] overflow-hidden  m-2 ">
+              <div class="card-pic w-[83px] h-[83px]  p-4">
+                <div class="rounded-[8px] bg-white overflow-hidden flex flex-col items-center">
+                <img class="w-[53px] h-[52px]"
+                  src="./src/assets/clipboard.png"
+                  alt="clipboard"
+                />
+                </div>
+              </div>
+              <div class="card-content  bg-[#DDC7BB] ">
+                <div class="flex flex-col items-start justify-evenly p-2">
+                  <h2 class="w-[193px] h-[22px] text-[18px] font-Montserrat font-bold">Transparent Process</h2>
+                  <br/>
+                  <p class="w-[227px] h-[63px] text-[16px] font-Montserrat font-light leading-[20px]">
+                    Stay informed with our clear and honest approach to buying
+                    your home
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-4 w-[275px] h-[268px] rounded-[18px] bg-[#DDC7BB] overflow-hidden  m-2 ">
+              <div class="card-pic w-[83px] h-[83px]  p-4">
+                <div class="rounded-[8px] bg-white overflow-hidden flex flex-col items-center">
+                <img class="w-[53px] h-[52px]"
+                  src="./src/assets/support.png"
+                  alt="support"
+                />
+                </div>
+              </div>
+              <div class="card-content  bg-[#DDC7BB] ">
+                <div class="flex flex-col items-start justify-evenly p-2">
+                  <h2 class="w-[193px] h-[22px] text-[18px] font-Montserrat font-bold">Exceptional Support</h2>
+                  <br/>
+                  <p class="w-[227px] h-[63px] text-[16px] font-Montserrat font-light leading-[20px]">
+                    Providing peace of mind with our responsive and attentive
+                    customer service
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>  
+      </section>
+
+      <!-- /////////////////////////////end choose us section////////////// -->
+      <!-- /////////////////////////////start popular residance section////////////// -->
+      <section class=" w-full p-8 bg-white flex flex-col  overflow-hidden ">
+          <div><p class="text-[55px] text-center"><b>Our Popular Residences</b></p></div>
+          <div class=" cards-all flex justify-evenly  overflow-hidden">
+                  
+                      <div class="card-1 w-[382px] h-[534px] rounded-[18px] overflow-hidden  bg-white m-2 ">
+                        <div class="card-pic w-full h-[70%]">
+                            <img class="w-full h-full object-cover" src="./src/assets/img1.png " alt="img1">
+                        </div>
+                        <div class="card-content h-[30%] bg-[#DDC7BB] p-1">
+                            <div class="w-[70%] flex flex-col items-start">
+                              <div class="flex flex-row items-center  p-2 gap-2">
+                                <img class="w-[10%]" src="./src/assets/location.png" alt="location">
+                                <h2 class="text-[15px]"><b>San Francisco, California</b></h2>
+                              </div>
+
+                              <div class="flex flex-row items-center  p-2 gap-x-15">
+                                <div class="flex flex-row items-center w-[114px]">
+                                    <img class="w-[24px] h-[24px] bg-white" src="./src/assets/rooms.png" alt="rooms">
+                                    <h3 class="text-[12px]">4 Rooms</h3>
+                                </div>  
+                                <div class="flex flex-row w-[128px]">
+                                    <img class="w-[24px] h-[24px] bg-white" src="./src/assets/size.png" alt="rooms">
+                                    <h3 class="text-[12px]"> 3,500 sq ft</h3>
+                                </div>   
+                                
+                              </div>
+                             
+                              <div class="flex flex-row  p-2 gap-x-20">
+                                    <button type="submit" class="w-[98px] h-[40px] p-[10px] bg-black text-white rounded-[10px] text-[15px]">Sign up</button>
+                                    <h3 class="text-[15px] p-[10px]"> <b>$2,500,000 </b></h3>
+                              </div>   
+
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="card-2 w-[382px] h-[534px] rounded-[18px] overflow-hidden  bg-white m-2 ">
+                        <div class="card-pic w-full h-[70%]">
+                            <img class="w-full h-full object-cover " src="./src/assets/image2.png " alt="img1">
+                        </div>
+                        <div class="card-content h-[30%] bg-[#DDC7BB] p-1">
+                            <div class="w-[70%] flex flex-col items-start">
+                              <div class="flex flex-row items-center  p-2 gap-2">
+                                <img class="w-[10%]" src="./src/assets/location.png" alt="location">
+                                <h2 class="text-[15px]"><b>Beverly Hills, California</b></h2>
+                              </div>
+
+                              <div class="flex flex-row items-center  p-2 gap-x-15">
+                                <div class="flex flex-row items-center w-[114px]">
+                                    <img class="w-[24px] h-[24px] bg-white" src="./src/assets/rooms.png" alt="rooms">
+                                    <h3 class="text-[12px]">3 Rooms</h3>
+                                </div>  
+                                <div class="flex flex-row items-center w-[128px]">
+                                    <img class="w-[24px] h-[24px] bg-white" src="./src/assets/size.png" alt="rooms">
+                                    <h3 class="text-[12px]"> 1,500 sq ft</h3>
+                                </div>   
+                                
+                              </div>
+                             
+                              <div class="flex flex-row  p-2 gap-x-20">
+                                    <button type="submit" class="w-[98px] h-[40px] p-[10px] bg-black text-white rounded-[10px] text-[15px]">Sign up</button>
+                                    <h3 class="text-[15px] p-[10px]"> <b>$850,000 </b></h3>
+                              </div>   
+
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class=" card-3 w-[382px] h-[534px] rounded-[18px] overflow-hidden  bg-white m-2  ">
+                          <div class="card-pic w-full h-[70%]">
+                            <img class="w-full h-full object-cover " src="./src/assets/image3.png " alt="img1">
+                          </div>
+                          <div class="card-content h-[30%] bg-[#DDC7BB] p-1">
+                            <div class="w-[70%] flex flex-col items-start">
+                              <div class="flex flex-row items-center  p-2 gap-2">
+                                <img class="w-[10%]" src="./src/assets/location.png" alt="location">
+                                <h2 class="text-[15px]"><b>Palo Alto, California</b></h2>
+                              </div>
+
+                              <div class="flex flex-row items-center  p-2 gap-x-15">
+                                <div class="flex flex-row w-[114px]">
+                                    <img class="w-[24px] h-[24px] bg-white" src="./src/assets/rooms.png" alt="rooms">
+                                    <h3 class="text-[12px]">6 Rooms</h3>
+                                </div>  
+                                <div class="flex flex-row w-[128px]">
+                                    <img class="w-[24px] h-[24px] bg-white" src="./src/assets/size.png" alt="rooms">
+                                    <h3 class="text-[12px]"> 4,000 sq ft</h3>
+                                </div>   
+                                
+                              </div>
+                             
+                              <div class="flex flex-row  p-2 gap-x-20">
+                                    <button type="submit" class="w-[98px] h-[40px] p-[10px] bg-black text-white rounded-[10px] text-[15px]">Sign up</button>
+                                    <h3 class="text-[15px] p-[10px]"> <b>$3,700,000</b></h3>
+                              </div>   
+
+                            </div>
+                          </div>
+                      </div>
+                      
+          </div>
+
+      </section>
+      <!-- /////////////////////////////end popular residance section////////////// -->
+
+      <!-- /////////////////////////////Start Reviews section////////////// -->
+      <section
+        class="reviews w-full p-8 bg-[#FEF7F2] text-center flex flex-col overflow-hidden"
+      >
+        <h2 class="text-[48px] font-extrabold leading-tight text-[#2B1B12]">
+          What People Say <br />
+          About Dream Home
+        </h2>
+        <div class="cards-all flex justify-evenly overflow-hidden">
+          <div
+            class="card-1 w-[382px] h-[430px] m-2 rounded-lg overflow-hidden"
+          >
+            <div class="card-pic w-full h-1/3">
+              <img
+                src="./src/assets/reviews-img/home-pic.png"
+                alt="a photo submitted by a reviewer 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="card-content h-2/3 bg-[#DDC7BB] p-1">
+              <div class="reviewer-details flex items-start justify-evenly">
+                <img
+                  src="./src/assets/reviews-img/face-pic-1.png"
+                  alt="reviewer profile picture 1"
+                />
+                <p class="text-[#2B1B12]">
+                  Jessica Pelham <br />
+                  Atlanta
+                </p>
+                <img
+                  src="./src/assets/reviews-img/5stars.png"
+                  alt="5 stars score"
+                />
+              </div>
+              <p
+                class="text-[#4F3527] text-center p-6 font-semibold text-[16px] leading-[130%]"
+              >
+                Dream Home truly cares about their clients. They listened to my
+                needs and preferences and helped me find the perfect home in the
+                Bay Area. Their professionalism and attention to detail are
+                unmatched.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-2 w-[382px] h-[430px] m-2 rounded-lg overflow-hidden"
+          >
+            <div class="card-pic w-full h-1/3">
+              <img
+                src="./src/assets/reviews-img/home-pic-2.png"
+                alt="a photo submitted by a reviewer 2"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="card-content h-2/3 bg-[#DDC7BB] p-1">
+              <div class="reviewer-details flex items-start justify-evenly">
+                <img
+                  src="./src/assets/reviews-img/face-pic-2.png"
+                  alt="reviewer profile picture 2"
+                />
+                <p class="text-[#2B1B12]">
+                  Michael Stockton<br />
+                  San Diego
+                </p>
+                <img
+                  src="./src/assets/reviews-img/4-5stars"
+                  alt="4.5 stars score"
+                />
+              </div>
+              <p
+                class="text-[#4F3527] text-center p-6 font-semibold text-[16px] leading-[130%]"
+              >
+                I had a fantastic experience working with Dream home. Their
+                expertise and personalized service exceeded my expectations. I
+                found my dream home quickly and smoothly. Highly recommended!
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-3 w-[382px] h-[430px] m-2 rounded-lg overflow-hidden"
+          >
+            <div class="card-pic w-full h-1/3">
+              <img
+                src="./src/assets/reviews-img/home-pic-3.png"
+                alt="a photo submitted by a reviewer 3"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="card-content h-2/3 bg-[#DDC7BB] p-1">
+              <div class="reviewer-details flex items-start justify-evenly">
+                <img
+                  src="./src/assets/reviews-img/face-pic-3.png"
+                  alt="reviewer profile picture 3"
+                />
+                <p class="text-[#2B1B12]">
+                  Emily Gordon <br />
+                  Sacramento
+                </p>
+                <img
+                  src="./src/assets/reviews-img/5stars.png"
+                  alt="5 stars score"
+                />
+              </div>
+              <p
+                class="text-[#4F3527] text-center p-6 font-semibold text-[16px] leading-[130%]"
+              >
+                Dream home made my dream of owning a home a reality! Their team
+                provided exceptional support and guided me through every step of
+                the process. I couldn't be happier with my new home!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="arrows bg-inherit w-full p-1 flex justify-center gap-3">
+          <img src="./src/assets/reviews-img/arrow-left.png" alt="left arrow" />
+          <img
+            src="./src/assets/reviews-img/arrow-right.png"
+            alt="right arrow"
+          />
+        </div>
+      </section>
+      <!-- ///////////////////////////// end Reviews section////////////// -->
+      <!-- /////////////////////////////`contact section////////////// -->
+      <section class="contact-us bg-white w-full px-20 py-24 text-center">
+        <h2 class="text-[48px] font-extrabold leading-tight text-[#2B1B12]">
+          Do You Have Any Questions? <br />
+          Get Help From Us
+        </h2>
+        <div class="verified flex justify-center m-10">
+          <ul class="flex gap-20 text-[#543E32]">
+            <li class="flex items-center gap-2">
+              <img
+                src="./src/assets/verified-icon.png"
+                alt="verified-icon"
+                class="w-5 h-5"
+              />
+              Chat live with our support team
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="./src/assets/verified-icon.png"
+                alt="verified-icon"
+                class="w-5 h-5"
+              />
+              Browse our FAQ
+            </li>
+          </ul>
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email address..."
+          class="bg-[#DDC7BB] rounded-md px-4 py-2 placeholder:text-[#7A5C4D] mr-3"
+        />
+        <label for="email" class="sr-only">Email</label>
+        <button
+          class="bg-[#2B1B12] text-white rounded-md px-4 py-2 hover:bg-[#DDC7BB] hover:text-[#2B1B12] transition-all duration-1000"
+        >
+          Submit
+        </button>
+      </section>
+      <!-- /////////////////////////////`end contact section////////////// -->
     </main>
-    <footer></footer>
+
+    <footer
+      class="bg-[#DDC7BB] w-full h-70 flex justify-evenly items-start p-1"
+    >
+      <div class="footer-logo w-[15%] py-5">
+        <figure class="w-15">
+          <img src="./src/assets/Logo-orig-75smaller.png" alt="logo" />
+        </figure>
+        <p>Making your dream home come true is our passion.</p>
+      </div>
+
+      <div class="footer-about py-5">
+        <h4 class="font-bold">About</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-support py-5">
+        <h4 class="font-bold">Support</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-find py-5">
+        <h4 class="font-bold">Find Us</h4>
+        <ul>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social py-5">
+        <h4 class="font-bold">Our Social</h4>
+        <ul>
+          <li>
+            <a
+              class="flex items-center gap-2"
+              href="https://www.instagram.com/"
+              target="_blank"
+              ><img
+                src="./src/assets/instagram.png"
+                alt="instagram"
+              />Instgram</a
+            >
+          </li>
+          <li>
+            <a
+              class="flex items-center gap-2"
+              href="https://www.facebook.com/"
+              target="_blank"
+              ><img src="./src/assets/facebook.png" alt="facebook" />Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              class="flex items-center gap-2"
+              href="https://www.x.com"
+              target="_blank"
+              ><img src="./src/assets/twitterx.png" alt="twitterx" />Twitter</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
